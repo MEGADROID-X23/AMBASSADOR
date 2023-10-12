@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIQUID SNAKE</title>
+    <link rel="stylesheet" href="./index style.css">
+</head>
+<body>
+    <div class="hero">
+
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="download-2.mp4" type="video/mp4">
+        </video>
+        
+        <nav>            
+        </nav>
+        <div class="content">
+            <h1>AMBASSADOR</h1>
+            <h2>Giving words a whole new meaning!</h2>
+            <a href="app.html">Wanna try?</a>
+    <marquee behavior="smooth" direction="left"><h3>AMBASSADOR</h3> - A light-weight language translator web app by <span class="s1">Tochi 'MEGADROID' Nwadibia</span></marquee>
+
+        </div>
+    </div>
+
+    <script>
+        function playMusicOnEnterKeyPress() {
+          const music = new Audio("Number Comparison Gaming_CBR_256k.mp3");
+          music.loop = true;
+          let isMusicPlaying = false;
+      
+          function toggleMusic() {
+            if (!isMusicPlaying) {
+              music.play();
+              isMusicPlaying = true;
+            } else {
+              music.pause();
+              isMusicPlaying = false;
+            }
+          }
+      
+          document.addEventListener("keydown", (event) => {
+            if (event.key === "Enter") {
+              toggleMusic();
+            }
+          });
+        }
+      
+        window.addEventListener("load", playMusicOnEnterKeyPress);
+      </script>
+      <!--Index home page-->
+</body>
+</html>
